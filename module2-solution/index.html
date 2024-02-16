@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>module2-solution</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menu-toggle');
+
+    var menuContent = document.getElementById('menu-content');
+
+    menuToggle.addEventListener('click', function() {
+
+        menuContent.classList.toggle('collapse');
+    });
+});
+
+    </script>
 </head>
 <body>
     <header>
@@ -13,6 +26,17 @@
                 <a class="navbar-brand" href="#">Food, LLC</a>
             
           </nav>
+          <button class="menu-btn" id="menu-toggle">Menu</button>
+          <!-- Contenu du menu -->
+          <div class="collapse" id="menu-content">
+              <ul class="nav navbar-nav visible-xs">
+                  <li><a class="menu-item" href="#">Chicken</a></li>
+                  <li><a class="menu-item" href="#">Beef</a></li> 
+                  <li><a class="menu-item" href="#">Sushi</a></li> 
+              </ul>
+          </div>
+          
+
     </header>
     <h2>Our Menu</h2>
         <div class=" section">
