@@ -56,9 +56,13 @@ background-color: aqua;
             .section{
                 width: 48%;
                 float: left;
-               margin: 1%;
-               
-            }}
+               margin: 1%;  
+            }
+            .section:nth-child(3) {
+        width: 100%; 
+        float: none; 
+        clear: both; 
+    }}
             @media (max-width: 767px) {
             .section{
                 width: 96%;
